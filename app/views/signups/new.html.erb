@@ -1,0 +1,11 @@
+<h1> Sign up a Camper for an Activity </h1>
+
+
+<%= form_for(@signup) do |f| %>
+Camper: <%= f.collection_select :camper_id, Camper.order(:name), :id, :name %> <br>
+Activity: <%= f.collection_select :activity_id, Activity.order(:name), :id, :name %> <br>
+Time: <%= f.text_field :time %> <br>
+
+<%= f.submit %>
+<% end %>
+
