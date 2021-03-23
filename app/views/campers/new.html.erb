@@ -1,0 +1,9 @@
+<h1> Create a new camper! </h1>
+
+
+<%= form_for(@camper) do |f| %>
+Name: <%= f.text_field :name %> <br>
+Age: <%= f.text_field :age %> <br>
+
+<%= f.submit %>
+<% end %>
